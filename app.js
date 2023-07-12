@@ -35,7 +35,7 @@ async function httpGet(url) {
 // obtenir le nombre de Pokemon et généré des LI en fonction du nombre de pokemon par tranche de 10
 function getNombrePokemon() {
   const response = httpGet(
-    `https://pokeapi.co/api/v2/pokemon?limit=1200&offset=0`
+    `https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0`
   );
   response.then((data) => {
     // console.log(data.results)
@@ -54,7 +54,7 @@ function getNombrePokemon() {
     }
 
     const btns = document.querySelectorAll(".btn");
-    // console.log(btns);
+    console.log(btns);
     btns.forEach((element) => {
       // console.log(element.getAttribute("data"));
       element.addEventListener("click", () => {
