@@ -1,0 +1,79 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+h1{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Rubik Puddles', cursive;
+}
+
+#pokemons{
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 15px;
+column-gap: 15px;
+}
+
+#cible{
+    position: relative;
+    width: 550px;
+    /* overflow: hidden; */
+    transition: 1s;
+    left: 0;
+}
+
+.navigation{
+    position: absolute;
+    overflow: hidden;
+    /* width: 500px; */
+}
+
+.navigation li a {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+.left{
+    position: relative;
+    left: -285px;
+    top: 10px;
+    font-size: 22px;
+}
+
+.right{
+    position: relative;
+    left: 280px;
+    top: 10px;
+    font-size: 22px;
+}
+
+
+.Pokemon{
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    background-color: beige;
+}
+
+.Pokemon h2{
+   
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex img {
+    width: 70%;
+}
