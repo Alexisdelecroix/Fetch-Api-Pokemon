@@ -3,20 +3,20 @@ let directionDroiteGauche = document.getElementById("directionDroiteGauche");
 let cible = document.getElementById("cible");
 
 // Déplacement de mon UL 
-let click = 70;
+let click = 140;
 let user_click = 0;
 
 directionDroite.addEventListener("click", () => {
   user_click++;
   cible.style.left = `-${click}px`;
-  click = click + 70;
+  click = click + 140;
 });
 
 directionGauche.addEventListener("click", () => {
   user_click++;
-  click -= 70;
+  click -= 140;
   cible.style.left = `-${click}px`;
-  if (click === -70) {
+  if (click === -140) {
     click = 0;
     cible.style.left = `-${click}px`;
   }
@@ -52,7 +52,7 @@ function getNombrePokemon() {
       dataOffeset = dataOffeset + 10;
       id++;
     }
-    
+
     const btns = document.querySelectorAll(".btn");
     console.log(btns);
     btns.forEach((element) => {
