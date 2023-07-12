@@ -40,9 +40,9 @@ function getNombrePokemon() {
   response.then((data) => {
     // console.log(data.results)
     let nombre = data.results.length;
-    console.log(nombre);
+    // console.log(nombre);
     nombre = nombre / 10;
-    console.log(nombre);
+    // console.log(nombre);
     let dataOffeset = 1;
     let id = 1;
     let i = 0;
@@ -54,11 +54,10 @@ function getNombrePokemon() {
     }
 
     const btns = document.querySelectorAll(".btn");
-    console.log(btns);
+    // console.log(btns);
     btns.forEach((element) => {
       // console.log(element.getAttribute("data"));
       element.addEventListener("click", () => {
-        console.log("coucou");
         getPokemons(element.getAttribute("data"))
       });
     });
@@ -69,12 +68,11 @@ getNombrePokemon();
 
 // Obtenir les pokemons par tranche de 10
 function getPokemons(offset) {
-  console.log("coucou");
   const response = httpGet(
     `https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`
   );
   response.then((data) => {
-    console.log(data.results)
+    // console.log(data.results)
     showPokemons(data.results, offset);
   });
 }

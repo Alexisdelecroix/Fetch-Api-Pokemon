@@ -7,7 +7,8 @@ h1{
     padding-top: 50px;
     margin-bottom: 20px;
     text-align: center;
-    font-family: 'Rubik Puddles', cursive;
+    font-size: 55px;
+    font-family: 'Chela One', cursive;
 }
 
 #pokemons{
@@ -61,12 +62,15 @@ column-gap: 15px;
     border: 2px solid black;
     border-radius: 20px;
     width: 200px;
-    background-color: beige;
+    background-color: #4d9bb3;
 }
 
 .Pokemon h2{
-   
+    font-family: 'Bacasime Antique', serif;
+    font-style: italic;
     text-align: center;
+    color: azure;
+font-weight: bold;
 }
 
 .flex{
